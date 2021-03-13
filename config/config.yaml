@@ -1,0 +1,5 @@
+common:
+  port: 8080 # порт, на котором будет запускаться наше приложение
+postgres:
+  database_url: postgres://forum_user:forum_password@127.0.0.1/forum
+  require_ssl: false # стоит ли шифровать соединение с базой
