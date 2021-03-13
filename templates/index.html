@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <style>
+        html {
+            font-family: Verdana, "sans-serif";
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(#f9de59, #f98365) no-repeat;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            text-shadow: 0 2px 5px rgba(150, 150, 150, 0.8);
+        }
+
+        #root {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #messages {
+            width: 70%;
+        }
+
+        .message {
+            background-color: white;
+            width: 100%;
+            padding: 20px;
+            border-radius: 10px;
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            transition: 0.3s;
+            -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        .message:hover {
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            transition: 0.3s;
+            -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        .message__created {
+            font-size: 12px;
+            color: darkgrey;
+            text-align: right;
+        }
+
+        .message__text {
+            font-size: 20px;
+            color: black;
+            margin-top: 5px;
+        }
+
+        .message__ratings {
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 5px;
+        }
+
+        .form {
+            width: 70%;
+            margin-bottom: 20px;
+        }
+
+        .form__button {
+            text-align: center;
+            margin-top: 10px;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .form__input, .form__button {
+            box-sizing: border-box;
+            width: 100%;
+            font-size: 18px;
+            outline: none;
+            border: none;
+            padding: 20px;
+            border-radius: 5px;
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            transition: 0.3s;
+            -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .form__input:focus, .form__button:hover {
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            transition: 0.3s;
+            -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>{{title}}</h1>
+    <div id="root">
+        <div class="form">
+            <input id="message_text" class="form__input" type="text"
+                   placeholder="Введите свой отзыв..."/>
+            <div class="form__button" onclick="sendMessage()">Отправить</div>
+        </div>
+        <div id="messages">
+
+        </div>
+    </div>
+</div>
+</body>
+<script type="application/javascript">
+    const sendMessage = () => {
+        alert('Спасибо за отзыв!');
+    }
+</script>
+</html>
