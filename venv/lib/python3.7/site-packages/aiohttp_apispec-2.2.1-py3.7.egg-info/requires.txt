@@ -1,0 +1,4 @@
+aiohttp<4.0,>=3.0.1
+apispec<4.0,>=3.0.0
+webargs<6.0
+jinja2<3.0

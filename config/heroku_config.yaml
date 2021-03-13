@@ -1,0 +1,5 @@
+common:
+  port: $PORT
+postgres:
+  database_url: $DATABASE_URL
+  require_ssl: true
